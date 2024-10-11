@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Edit</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>id</mat-label>
+    <input matInput [(ngModel)]="id" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>updateKey</mat-label>
+    <input matInput [(ngModel)]="updateKey" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>updateValue</mat-label>
+    <input matInput [(ngModel)]="updateValue" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>No Thanks</button>
+  <button mat-button mat-dialog-close (click)="onUpdate()" cdkFocusInitial>Update</button>
+</mat-dialog-actions>
